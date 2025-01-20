@@ -12,6 +12,8 @@ import { SectionHealthComponent } from './sections/section-health/section-health
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
+import { ServerComponent } from './server/server.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
     SectionSalesComponent,
     SectionOrdersComponent,
     SectionHealthComponent,
+    ServerComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
     BarChartComponent,
     LineChartComponent,
     PieChartComponent,
+    CommonModule
   ],
   providers: [provideCharts(withDefaultRegisterables())],
   bootstrap: [AppComponent]
